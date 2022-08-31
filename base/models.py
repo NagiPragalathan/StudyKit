@@ -55,9 +55,17 @@ class FollowersCount(models.Model):
 
 #Aleart
 class Emergency(models.Model):
-    user_id = models.IntegerField(max_length=100)
+    user_id = models.IntegerField()
     number = models.CharField(max_length=100)
     messages = models.CharField(max_length=100,default="i am in trubble please help me")
     def __str__(self):
         return self.user
+    
+class FilesUpload(models.Model):
+    user_id = models.FileField()
+    Catagery = models.CharField(max_length=100)
+    Topic = models.CharField(max_length=100)
+    def __str__(self):
+        return self.user
+
 

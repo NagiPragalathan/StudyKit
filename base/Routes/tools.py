@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from ..modules import Tools
+from ..modules.ToolKit import Tools
 
 def TexttoSound(request):
     return render(request, 'tools/TextToVoice.html')

@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <!--
+    Template Name: python
+    {% load static %}
+    
+    Author: <a href="http://www.os-templates.com/">OS Templates</a>
+    Author URI: http://www.os-templates.com/
+    Licence: Free to use under our free template licence terms
+    Licence URI: http://www.os-templates.com/template-terms
+    -->
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>python</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="{% static 'cources/school_education/layout/styles/layout.css' %}" type="text/css" />
+    <script type="text/javascript" src="{% static 'cources/school_education/layout/scripts/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'cources/school_education/layout/scripts/jquery.slidepanel.setup.js' %}"></script>
+    <!-- Homepage Only Scripts -->
+    <script type="text/javascript" src="{% static 'cources/school_education/layout/scripts/jquery.cycle.min.js' %}"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#featured_slide').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+            timeout: 5000,
+            fx: 'fade',
+            pager: '#fs_pagination',
+            pause: 1,
+            pauseOnPagerHover: 0
+        });
+    });
+    </script>
+    <!-- End Homepage Only Scripts -->
+    </head>
+    <body>
+    <div class="wrapper col0">
+    <div id="topbar">
+        <div id="slidepanel">
+        <div class="topbox">
+            <h2>Nullamlacus dui ipsum</h2>
+            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        <div class="topbox">
+            <h2>Teachers Login Here</h2>
+            <form action="#" method="post">
+            <fieldset>
+                <legend>Teachers Login Form</legend>
+                <label for="teachername">Username:
+                <input type="text" name="teachername" id="teachername" value="" />
+                </label>
+                <label for="teacherpass">Password:
+                <input type="password" name="teacherpass" id="teacherpass" value="" />
+                </label>
+                <label for="teacherremember">
+                <input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+                Remember me</label>
+                <p>
+                <input type="submit" name="teacherlogin" id="teacherlogin" value="Login" />
+                &nbsp;
+                <input type="reset" name="teacherreset" id="teacherreset" value="Reset" />
+                </p>
+            </fieldset>
+            </form>
+        </div>
+        <div class="topbox last">
+            <h2>Pupils Login Here</h2>
+            <form action="#" method="post">
+            <fieldset>
+                <legend>Pupils Login Form</legend>
+                <label for="pupilname">Username:
+                <input type="text" name="pupilname" id="pupilname" value="" />
+                </label>
+                <label for="pupilpass">Password:
+                <input type="password" name="pupilpass" id="pupilpass" value="" />
+                </label>
+                <label for="pupilremember">
+                <input class="checkbox" type="checkbox" name="pupilremember" id="pupilremember" checked="checked" />
+                Remember me</label>
+                <p>
+                <input type="submit" name="pupillogin" id="pupillogin" value="Login" />
+                &nbsp;
+                <input type="reset" name="pupilreset" id="pupilreset" value="Reset" />
+                </p>
+            </fieldset>
+            </form>
+        </div>
+        <br class="clear" />
+        </div>
+        <div id="loginpanel">
+        <ul>
+            <li class="left">Log In Here &raquo;</li>
+            <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Administration</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+        </ul>
+        </div>
+        <br class="clear" />
+    </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper col1">
+    <div id="header">
+        <div id="logo">
+        <h1><a href="index.html">python</a></h1>
+        <p>results for python</p>
+        </div>
+        <div id="topnav">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="pages/style-demo.html">Style Demo</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="#">Link Text</a></li>
+            <li class="last"><a href="#">A Long Link Text</a></li>
+        </ul>
+        </div>
+        <br class="clear" />
+    </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper col2">
+    <div id="featured_slide">
+        <div class="featured_box"><a href="#"><img src="{% static 'cources/school_education/python/Image_5.jpg' %}" alt="" /></a>
+        <div class="floater">
+            <h2>
+
+</h2>
+            <p>Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. </p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        </div>
+        <div class="featured_box"><a href="#"><img src="{% static 'cources/school_education/python/Image_11.jpg' %}" alt="" /></a>
+        <div class="floater">
+            <h2>Functions Defined</h2>
+            <p>The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. More about defining functions in Python 3</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        </div>
+        <div class="featured_box"><a href="#"><img src="{% static 'cources/school_education/python/Image_7.png' %}" alt="" /></a>
+        <div class="floater">
+            <h2>Compound Data Types</h2>
+            <p>Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. More about lists in Python 3</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        </div>
+        <div class="featured_box"><a href="#"><img src="{% static 'cources/school_education/python/Image_7.jpg' %}" alt="" /></a>
+        <div class="floater">
+            <h2>Intuitive Interpretation</h2>
+            <p>Calculations are simple with Python, and expression syntax is straightforward: the operators +, -, * and / work as expected; parentheses () can be used for grouping. More about simple math functions in Python 3.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        </div>
+        <div class="featured_box"><a href="#"><img src="{% static 'cources/school_education/images/demo/450x300.gif' %}"  alt="" /></a>
+        <div class="floater">
+            <h2>Quick & Easy to Learn</h2>
+            <p>Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. Whet your appetite with our Python 3 overview.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper col3">
+    <div id="homecontent">
+        <div class="fl_left">
+        <div class="column2">
+            <ul>
+            <li>
+                <h2>All the Flow You’d Expect</h2>
+                <div class="imgholder"><img src="{% static 'cources/school_education/python/Image_7.jpg' %}" alt="" /></div>
+                <p>Python is a programming language that lets you work quickly and integrate systems more effectively. Learn More</p>
+                <p>Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</p>
+                <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+            </li>
+            <li class="last">
+                <h2>Python Tutorial</h2>
+                <div class="imgholder"><img src="{% static 'cources/school_education/python/Image_8.png' %}" alt="" /></div>
+                <p>Start with our Beginner’s Guide</p>
+                <p>Python source code and installers are available for download for all versions!</p>
+            
+                <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+            </li>
+            </ul>
+            <br class="clear" />
+        </div>
+        <div class="column2">
+            <h2>About python</h2>
+            <img class="imgl" src="{% static 'cources/school_education/python/Image_12.jpg' %}" alt="" />
+            <p>Latest: Python 3.10.6</p>
+            <p>Documentation for Python's standard library, along with tutorials and guides, are available online.</p>
+            <p>docs.python.org</p>
+            <p>Looking for work or have a Python related position that you're trying to hire for? Our relaunched community-run job board is the place to go.</br>jobs.python.org</br>More</br>More</br>More</br>Python provides convenience and flexibility for scalable ML/AI by Dean Wampler</br>More</br>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more </br>
+Become a Member
+Donate to the PSF
+</br>
+Copyright ©2001-2022.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Policy
+                             Powered by Heroku
+</br>Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. </br>The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. More about defining functions in Python 3</br>Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. More about lists in Python 3</br>Calculations are simple with Python, and expression syntax is straightforward: the operators +, -, * and / work as expected; parentheses () can be used for grouping. More about simple math functions in Python 3.</br>Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. Whet your appetite with our Python 3 overview.</br>Python knows the usual control flow statements that other languages speak — if, for, while and range — with some of its own twists, of course. More control flow tools in Python 3</br>Python is a programming language that lets you work quickly and integrate systems more effectively. Learn More</br>Whether you're new to programming or an experienced developer, it's easy to learn and use Python.</br>Start with our Beginner’s Guide</br>Python source code and installers are available for download for all versions!</br>Latest: Python 3.10.6</br>Documentation for Python's standard library, along with tutorials and guides, are available online.</br>docs.python.org</br>Looking for work or have a Python related position that you're trying to hire for? Our relaunched community-run job board is the place to go.</br>jobs.python.org</br>More</br>More</br>More</br>Python provides convenience and flexibility for scalable ML/AI by Dean Wampler</br>More</br>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more </br>
+Become a Member
+Donate to the PSF
+</br>
+Copyright ©2001-2022.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Policy
+                             Powered by Heroku
+</br>Python is a popular programming language.</br>Python can be used on a server to create web applications.</br>With our "Try it Yourself" editor, you can edit Python code and view the result.</br>Click on the "Try it Yourself" button to see how it works.</br>In our File Handling section you will learn how to open, read, write, and 
+delete files.</br>Python File Handling</br>In our database section you will learn how to access and work with MySQL and MongoDB databases:</br>Python MySQL Tutorial</br>Python MongoDB Tutorial</br>Insert the missing part of the code below to output "Hello World".</br>Start the Exercise</br>Learn by examples! This tutorial supplements all explanations with clarifying examples.</br>See All Python Examples</br>Test your Python skills with a quiz.</br>Python Quiz</br>Track your progress with the free "My Learning" program here at W3Schools.</br>Log into your account, and start earning points!</br>This is an optional feature, you can study W3Schools without using My Learning.</br>You will also find complete function and method references:</br>Reference Overview</br>Built-in Functions</br>String Methods</br>List/Array Methods</br>Dictionary Methods</br>Tuple Methods</br>Set Methods</br>File Methods</br>Python Keywords</br>Python Exceptions</br>Python Glossary</br>Random Module</br>Requests Module</br>Math Module</br>CMath Module</br>Download Python from the official Python web site:
+  https://python.org</br>Get certified by completing the  course</br>We just launchedW3Schools videos</br>Get certifiedby completinga course today!</br>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</br>help@w3schools.com</br>Your message has been sent to W3Schools.</br>
+</br>Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.[32]
+</br>Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.[33][34]
+</br>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[35] Python 2.0 was released in 2000 and introduced new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support. Python 3.0, released in 2008, was a major revision that is not completely backward-compatible with earlier versions. Python 2 was discontinued with version 2.7.18 in 2020.[36]
+</br>Python consistently ranks as one of the most popular programming languages.[37][38][39][40]
+</br>Python was conceived in the late 1980s[41] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to  the ABC programming language, which was inspired by SETL,[42] capable of exception handling and interfacing with the Amoeba operating system.[13] Its implementation began in December 1989.[43] Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's "benevolent dictator for life", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[44] In January 2019, active Python core developers elected a five-member Steering Council to lead the project.[45][46]
+</br>Python 2.0 was released on 16 October 2000, with many major new features.[47] Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x[48] and 2.7.x.  Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3.[49]
+</br>Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.[50][51]  No further security patches or other improvements will be released for it.[52][53] With Python 2's end-of-life, only Python 3.6.x[54] and later were supported. Later, support for 3.6 was also discontinued. In 2021, Python 3.9.2 and 3.8.8 were expedited[55] as all versions of Python (including 2.7[56]) had security issues leading to possible remote code execution[57] and web cache poisoning.[58]
+</br>In 2022, Python 3.10.4 and 3.9.12 were expedited[59] and so were older releases including 3.8.13, and 3.7.13 because of many security issues.[60] Python 3.9.13 is the latest 3.9 version, and from now on 3.9 (and older; 3.8 and 3.7) will only get security updates.[61]
+</br>Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of its features support functional programming and aspect-oriented programming (including metaprogramming[62] and metaobjects [magic methods] ).[63] Many other paradigms are supported via extensions, including design by contract[64][65] and logic programming.[66]
+</br>Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management.[67] It uses dynamic name resolution (late binding), which binds method and variable names during program execution.
+</br>Its design offers some support for functional programming in the Lisp tradition. It has filter,mapandreduce functions; list comprehensions, dictionaries, sets, and generator expressions.[68] The standard library has two modules (itertools and functools) that implement functional tools borrowed from Haskell and Standard ML.[69]
+</br>Its core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:[70]
+</br>Rather than building all of its functionality into its core, Python was designed to be highly extensible via modules. This compact modularity has made it particularly popular as a means of adding programmable interfaces to existing applications. Van Rossum's vision of a small core language with a large standard library and easily extensible interpreter stemmed from his frustrations with ABC, which espoused the opposite approach.[41]
+</br>Python strives for a simpler, less-cluttered syntax and grammar while giving developers a choice in their coding methodology. In contrast to Perl's "there is more than one way to do it" motto, Python embraces a "there should be one—and preferably only one—obvious way to do it"  philosophy.[70] Alex Martelli, a Fellow at the Python Software Foundation and Python book author, wrote: "To describe something as 'clever' is not considered a compliment in the Python culture."[71]
+</br>Python's developers strive to avoid premature optimization and reject patches to non-critical parts of the CPython reference implementation that would offer marginal increases in speed at the cost of clarity.[72] When speed is important, a Python programmer can move time-critical functions to extension modules written in languages such as C; or use PyPy, a just-in-time compiler. Cython is also available, which translates a Python script into C and makes direct C-level API calls into the Python interpreter.
+</br>Python's developers aim for it to be fun to use. This is reflected in its name—a tribute to the British comedy group Monty Python[73]—and in occasionally playful approaches to tutorials and reference materials, such as examples that refer to spam and eggs (a reference to a Monty Python sketch) instead of the standard foo and bar.[74][75]
+</br>The programming language's name 'Python' came from the BBC Comedy series Monty Python's Flying Circus. Guido van Rossum thought he needed a name that was short, unique and slightly mysterious, And so, he decided to name the programming language 'Python'.[73]
+</br>A common neologism in the Python community is pythonic, which has a wide range of meanings related to program style. "Pythonic" code may use Python idioms well, be natural or show fluency in the language, or conform with Python's minimalist philosophy and emphasis on readability. Code that is difficult to understand or reads like a rough transcription from another programming language is called unpythonic.[76][77]
+</br>Python users and admirers, especially those considered knowledgeable or experienced, are often referred to as Pythonistas.[78][79]
+</br>Python is meant to be an easily readable language. Its formatting is visually uncluttered and often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are allowed but rarely used. It has fewer syntactic exceptions and special cases than C or Pascal.[80]
+</br>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block.[81] Thus, the program's visual structure accurately represents its semantic structure.[82] This feature is sometimes termed the off-side rule. Some other languages use indentation this way; but in most, indentation has no semantic meaning. The recommended indent size is four spaces.[83]
+</br>Python's statements include:
+</br>The assignment statement (=) binds a name as a reference to a separate, dynamically-allocated object. Variables may subsequently be rebound at any time to any object. In Python, a variable name is a generic reference holder without a fixed data type; however, it always refers to some object with a type. This is called dynamic typing—in contrast to statically-typed languages, where each variable may contain only a value of a certain type.
+</br>Python does not support tail call optimization or first-class continuations, and, according to van Rossum, it never will.[86][87] However, better support for coroutine-like functionality is provided by extending Python's generators.[88] Before 2.5, generators were lazy iterators; data was passed unidirectionally out of the generator. From Python 2.5 on, it is possible to pass data back into a generator function; and from version 3.3, it can be passed through multiple stack levels.[89]
+</br>Some Python expressions are similar to those in languages such as C and Java, while some are not:
+</br>In Python, a distinction between expressions and statements is rigidly enforced, in contrast to languages such as Common Lisp, Scheme, or Ruby. This leads to duplicating some functionality. For example:
+</br>Statements cannot be a part of an expression—so list and other comprehensions or lambda expressions, all being expressions, cannot contain statements. A particular case is that an assignment statement such as a = 1 cannot form part of the conditional expression of a conditional statement. This has the advantage of avoiding a classic C error of mistaking an assignment operator = for an equality operator == in conditions: if (c = 1) { ... } is syntactically valid (but probably unintended) C code, but if c = 1: ... causes a syntax error in Python.
+</br>Methods on objects are functions attached to the object's class; the syntax instance.method(argument) is, for normal methods and functions, syntactic sugar for Class.method(instance, argument). Python methods have an explicit self parameter to access instance data, in contrast to the implicit self (or this) in some other object-oriented programming languages (e.g., C++, Java, Objective-C, Ruby).[100] Python also provides methods, often called dunder methods (due to their names beginning and ending with double-underscores), to allow user-defined classes to modify how they are handled by native operations including length, comparison, in arithmetic operations and type conversion.[101]
+</br>Python uses duck typing and has typed objects but untyped variable names. Type constraints are not checked at compile time; rather, operations on an object may fail, signifying that it is not of a suitable type. Despite being dynamically typed, Python is strongly typed, forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them.
+</br>Python allows programmers to define their own types using classes, most often used for object-oriented programming. New instances of classes are constructed by calling the class (for example, SpamClass() or EggsClass()), and the classes are instances of the metaclass type (itself an instance of itself), allowing metaprogramming and reflection.
+</br>Before version 3.0, Python had two kinds of classes (both using the same syntax): old-style and new-style,[102] current Python versions only support the semantics new style.
+</br>The long-term plan is to support gradual typing.[103] Python's syntax allows specifying static types, but they are not checked in the default implementation, CPython. An experimental optional static type-checker, mypy, supports compile-time type checking.[104]
+</br>1.33333
+</br>Python has the usual symbols for arithmetic operators (+, -, *, /), the floor division operator // and the modulo operation % (where the remainder can be negative,  e.g. 4 % -3 == -2). It also has ** for exponentiation, e.g. 5**3 == 125 and 9**0.5 == 3.0, and a matrix‑multiplication operator @ .[108] These operators work like in traditional math; with the same precedence rules, the operators infix (+ and - can also be unary to represent positive and negative numbers respectively).
+</br>The division between integers produces floating-point results. The behavior of division has changed significantly over time:[109]
+</br>In Python terms, / is true division (or simply division), and // is floor division. / before version 3.0 is classic division.[109]
+</br>Rounding towards negative infinity, though different from most languages, adds consistency. For instance, it means that the equation (a + b)//b == a//b + 1 is always true. It also means that the equation b*(a//b) + a%b == a is valid for both positive and negative values of a. However, maintaining the validity of this equation means that while the result of a%b is, as expected, in the half-open interval [0, b), where b is a positive integer, it has to lie in the interval (b, 0] when b is negative.[110]
+</br>Python provides a round function for rounding a float to the nearest integer. For tie-breaking, Python 3 uses round to even: round(1.5) and round(2.5) both produce 2.[111] Versions before 3 used round-away-from-zero: round(0.5) is 1.0, round(-0.5) is −1.0.[112]
+</br>Python allows boolean expressions with multiple equality relations in a manner that is consistent with general use in mathematics. For example, the expression a < b < c tests whether a is less than b and b is less than c.[113] C-derived languages interpret this expression differently: in C, the expression would first evaluate a < b, resulting in 0 or 1, and that result would then be compared with c.[114]
+</br>Python uses arbitrary-precision arithmetic for all integer operations. The Decimal type/class in the decimal module provides decimal floating-point numbers to a pre-defined arbitrary precision and several rounding modes.[115] The Fraction class in the fractions module provides arbitrary precision for rational numbers.[116]
+</br>Due to Python's extensive mathematics library, and the third-party library NumPy that further extends the native capabilities, it is frequently used as a scientific scripting language to aid in problems such as numerical data processing and manipulation.[117][118]
+</br>Hello world program:
+</br>Program to calculate the factorial of a positive integer:
+</br>Python's large standard library [119] provides tools suited to many tasks, and is commonly cited as one of its greatest strengths. For Internet-facing applications, many standard formats and protocols such as MIME and HTTP are supported. It includes modules for creating graphical user interfaces, connecting to relational databases, generating pseudorandom numbers, arithmetic with arbitrary-precision decimals,[120] manipulating regular expressions, and unit testing.
+</br>Some parts of the standard library are covered by specifications—for example, the Web Server Gateway Interface (WSGI) implementation wsgiref follows PEP 333[121]—but most are specified by their code, internal documentation, and test suites. However, because most of the standard library is cross-platform Python code, only a few modules need altering or rewriting for variant implementations.
+</br>As of June 2022,[update] the Python Package Index (PyPI), the official repository for third-party Python software, contains over 380,000[122] packages with a wide range of functionality, including:
+</br>Most Python implementations (including CPython) include a read–eval–print loop (REPL), permitting them to function as a command line interpreter for which users enter statements sequentially and receive results immediately.
+</br>Python also comes with an Integrated development environment (IDE) called IDLE, which is more beginner-oriented.
+</br>Other shells, including IDLE and IPython, add further abilities such as improved auto-completion, session state retention and syntax highlighting.
+</br>As well as standard desktop integrated development environments, there are Web browser-based IDEs, including SageMath, for developing science- and math-related programs; PythonAnywhere, a browser-based IDE and hosting environment; and Canopy IDE, a commercial IDE emphasizing scientific computing.[123]
+</br>CPython is the reference implementation of Python. It is written in C, meeting the C89 standard (Python 3.11 uses C11[124]) with several select C99 features (With later C versions out, it is considered outdated.[125][126]  CPython includes its own C extensions, but third-party extensions are not limited to older C versions—e.g. they can be implemented with C11 or C++.[127][128]) It compiles Python programs into an intermediate bytecode[129] which is then executed by its virtual machine.[130] CPython is distributed with a large standard library written in a mixture of C and native Python, and is available for many platforms, including Windows (starting with Python 3.9, the Python installer deliberately fails to install on Windows 7 and 8;[131][132] Windows XP was supported until Python 3.5) and most modern Unix-like systems, including macOS (and Apple M1 Macs, since Python 3.9.1, with experimental installer) and unofficial support for e.g. VMS.[133] Platform portability was one of its earliest priorities.[134] (During Python 1 and 2 development, even OS/2 and Solaris were supported,[135] but support has since been dropped for many platforms.)
+</br>Other just-in-time Python compilers have been developed, but are now unsupported:
+</br>There are several compilers to high-level object languages, with either unrestricted Python, a restricted subset of Python, or a language similar to Python as the source language:
+</br>Specialized:
+</br>Older projects (or not to be used with Python 3.x and latest syntax):
+</br>Performance comparison of various Python implementations on a non-numerical (combinatorial) workload was presented at EuroSciPy '13.[159] Python's performance compared to other programming languages is also benchmarked by The Computer Language Benchmarks Game.[160]
+</br>Python's development is conducted largely through the Python Enhancement Proposal (PEP) process, the primary mechanism for proposing major new features, collecting community input on issues, and documenting Python design decisions.[161] Python coding style is covered in PEP 8.[162] Outstanding PEPs are reviewed and commented on by the Python community and the steering council.[161]
+</br>Enhancement of the language corresponds with the development of the CPython reference implementation. The mailing list python-dev is the primary forum for the language's development. Specific issues are discussed in the Roundup bug tracker hosted at bugs.python.org.[163] Development originally took place on a self-hosted source-code repository running Mercurial, until Python moved to GitHub in January 2017.[164]
+</br>CPython's public releases come in three types, distinguished by which part of the version number is incremented:
+</br>Many alpha, beta, and release-candidates are also released as previews and for testing before final releases. Although there is a rough schedule for each release, they are often delayed if the code is not ready. Python's development team monitors the state of the code by running the large unit test suite during development.[170]
+</br>The major academic conference on Python is PyCon. There are also special Python mentoring programmes, such as Pyladies.
+</br>Python 3.10 deprecated wstr (to be removed in Python 3.12; meaning Python extensions[171] need to be modified by then),[172] and added pattern matching to the language.[173]
+</br>Tools that can generate documentation for Python API include pydoc (available as part of the standard library), Sphinx, Pdoc and its forks, Doxygen and Graphviz, among others.[174]
+</br>Python's name is derived from the British comedy group Monty Python, whom Python creator Guido van Rossum enjoyed while developing the language. Monty Python references appear frequently in Python code and culture;[175] for example, the metasyntactic variables often used in Python literature are spam and eggs instead of the traditional foo and bar.[175][176] The official Python documentation also contains various references to Monty Python routines.[177][178]
+</br>The prefix Py- is used to show that something is related to Python. Examples of the use of this prefix in names of Python applications or libraries include Pygame, a binding of SDL to Python (commonly used to create games); PyQt and PyGTK, which bind Qt and GTK to Python respectively; and PyPy, a Python implementation originally written in Python.
+</br>Since 2003, Python has consistently ranked in the top ten most popular programming languages in the TIOBE Programming Community Index where, as of October 2021[update], it is the most popular language (ahead of Java, and C).[179] It was selected Programming Language of the Year (for "the highest rise in ratings in a year") in 2007, 2010, 2018, and 2020 (the only language to do so four times[180]).[181]
+</br>An empirical study found that scripting languages, such as Python, are more productive than conventional languages, such as C and Java, for programming problems involving string manipulation and search in a dictionary, and determined that memory consumption was often "better than Java and not much worse than C or C++".[182]
+</br>Large organizations that use Python include Wikipedia, Google,[183] Yahoo!,[184] CERN,[185] NASA,[186] Facebook,[187] Amazon, Instagram,[188] Spotify,[189] and some smaller entities like ILM[190] and ITA.[191] The social news networking site Reddit was written mostly in Python.[192]
+</br>Python can serve as a scripting language for web applications, e.g., via mod_wsgi for the Apache webserver.[193] With Web Server Gateway Interface, a standard API has evolved to facilitate these applications. Web frameworks like Django, Pylons, Pyramid, TurboGears, web2py, Tornado, Flask, Bottle, and Zope support developers in the design and maintenance of complex applications. Pyjs and IronPython can be used to develop the client-side of Ajax-based applications. SQLAlchemy can be used as a data mapper to a relational database. Twisted is a framework to program communications between computers, and is used (for example) by Dropbox.
+</br>Libraries such as NumPy, SciPy, and Matplotlib allow the effective use of Python in scientific computing,[194][195] with specialized libraries such as Biopython and Astropy providing domain-specific functionality. SageMath is a computer algebra system with a notebook interface programmable in Python: its library covers many aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus.[196] OpenCV has Python bindings with a rich set of features for computer vision and image processing.[197]
+</br>Python is commonly used in artificial intelligence projects and machine learning projects with the help of libraries like TensorFlow, Keras, Pytorch, and Scikit-learn.[198][199][200][201] As a scripting language with a modular architecture, simple syntax, and rich text processing tools, Python is often used for natural language processing.[202]
+</br>Python can also be used to create games, with libraries such as Pygame, which can make 2D games.
+</br>Python has been successfully embedded in many software products as a scripting language, including in finite element method software such as Abaqus, 3D parametric modeler like FreeCAD, 3D animation packages such as 3ds Max, Blender, Cinema 4D, Lightwave, Houdini, Maya, modo, MotionBuilder, Softimage, the visual effects compositor Nuke, 2D imaging programs like GIMP,[203] Inkscape, Scribus and Paint Shop Pro,[204] and musical notation programs like scorewriter and capella. GNU Debugger uses Python as a pretty printer to show complex structures such as C++ containers. Esri promotes Python as the best choice for writing scripts in ArcGIS.[205] It has also been used in several video games,[206][207] and has been adopted as first of the three available programming languages in Google App Engine, the other two being Java and Go.[208]
+</br>Many operating systems include Python as a standard component. It ships with most Linux distributions,[209] AmigaOS 4 (using Python 2.7), FreeBSD (as a package), NetBSD, and OpenBSD (as a package) and can be used from the command line (terminal). Many Linux distributions use installers written in Python: Ubuntu uses the Ubiquity installer, while Red Hat Linux and Fedora Linux use the Anaconda installer. Gentoo Linux uses Python in its package management system, Portage.
+</br>Python is used extensively in the information security industry, including in exploit development.[210][211]
+</br>Most of the Sugar software for the One Laptop per Child XO, now[when?] developed at Sugar Labs, is written in Python.[212] The Raspberry Pi single-board computer project has adopted Python as its main user-programming language.
+</br>LibreOffice includes Python and intends to replace Java with Python. Its Python Scripting Provider is a core feature[213] since Version 4.0 from 7 February 2013.
+</br>Python's design and philosophy have influenced many other programming languages:
+</br>Python's development practices have also been emulated by other languages. For example, the practice of requiring a document describing the rationale for, and issues surrounding, a change to the language (in Python, a PEP) is also used in Tcl,[223] Erlang,[224] and Swift.[225]
+</br>
+.
+</br></p>
+        </div>
+        </div>
+        <div class="fl_right">
+        <h2>Latest From The School Blog</h2>
+        <ul>
+            <li>
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_2.jpg' %}" alt="" /></a></div>
+            <p><strong><a href="#">All the Flow You’d Expect</a></strong></p>
+            <p>jobs.python.org</p>
+            </li>
+            <li>
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_3.jpg' %}" alt="" /></a></div>
+            <p><strong><a href="#">
+
+</a></strong></p>
+            <p>More</p>
+            </li>
+            <li>
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_4.jpg' %}" alt="" /></a></div>
+            <p><strong><a href="#">Functions Defined</a></strong></p>
+            <p>More</p>
+            </li>
+            <li>
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_5.png' %}" alt="" /></a></div>
+            <p><strong><a href="#">Compound Data Types</a></strong></p>
+            <p>More</p>
+            </li>
+            <li class="last">
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_1.jpg' %}" alt="" /></a></div>
+            <p><strong><a href="#">Intuitive Interpretation</a></strong></p>
+            <p>Python provides convenience and flexibility for scalable ML/AI by Dean Wampler</p>
+            </li>
+            <li class="last">
+            <div class="imgholder"><a href="#"><img src="{% static 'cources/school_education/python/Image_1.jpg' %}" alt="" /></a></div>
+            <p><strong><a href="#">Intuitive Interpretation</a></strong></p>
+            <p><a href='https://www.python.org/'>https://www.python.org/</a></br><a href='https://www.python.org/'>https://www.python.org/</a></br><a href='https://www.w3schools.com/python/'>https://www.w3schools.com/python/</a></br><a href='https://en.wikipedia.org/wiki/Python_(programming_language)'>https://en.wikipedia.org/wiki/Python_(programming_language)</a></br><a href='https://www.programiz.com/python-programming/online-compiler/'>https://www.programiz.com/python-programming/online-compiler/</a></br><a href='https://www.codecademy.com/catalog/language/python'>https://www.codecademy.com/catalog/language/python</a></br><a href='https://www.tutorialspoint.com/python/index.htm'>https://www.tutorialspoint.com/python/index.htm</a></br><a href='https://www.geeksforgeeks.org/python-programming-language/'>https://www.geeksforgeeks.org/python-programming-language/</a></br><a href='https://www.learnpython.org/'>https://www.learnpython.org/</a></br><a href='https://www.coursera.org/learn/python'>https://www.coursera.org/learn/python</a></br><a href='https://developers.google.com/edu/python'>https://developers.google.com/edu/python</a></br><a href='https://www.udemy.com/topic/python/'>https://www.udemy.com/topic/python/</a></br><a href='https://realpython.com/'>https://realpython.com/</a></br><a href='https://www.reddit.com/r/Python/'>https://www.reddit.com/r/Python/</a></br><a href='https://www.javatpoint.com/python-tutorial'>https://www.javatpoint.com/python-tutorial</a></br><a href='https://www.pluralsight.com/paths/core-python'>https://www.pluralsight.com/paths/core-python</a></br><a href='https://github.com/python'>https://github.com/python</a></br><a href='https://pythontutor.com/'>https://pythontutor.com/</a></br><a href='https://www.scaler.com/topics/python'>https://www.scaler.com/topics/python</a></br><a href='https://www.edx.org/learn/python'>https://www.edx.org/learn/python</a></br><a href='https://www.jetbrains.com/pycharm/'>https://www.jetbrains.com/pycharm/</a></br><a href='https://code.visualstudio.com/docs/languages/python'>https://code.visualstudio.com/docs/languages/python</a></br><a href='https://www.datacamp.com/courses/intro-to-python-for-data-science'>https://www.datacamp.com/courses/intro-to-python-for-data-science</a></br><a href='https://www.infoworld.com/article/3204016/what-is-python-powerful-intuitive-programming.html'>https://www.infoworld.com/article/3204016/what-is-python-powerful-intuitive-programming.html</a></br><a href='https://www.py4e.com/'>https://www.py4e.com/</a></br><a href='https://aws.amazon.com/developer/language/python/'>https://aws.amazon.com/developer/language/python/</a></br><a href='https://stackoverflow.com/questions/tagged/python'>https://stackoverflow.com/questions/tagged/python</a></br><a href='https://www.netacad.com/courses/programming/pcap-programming-essentials-python'>https://www.netacad.com/courses/programming/pcap-programming-essentials-python</a></br><a href='https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/'>https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/</a></br><a href='https://www.linkedin.com/learning/topics/python'>https://www.linkedin.com/learning/topics/python</a></br><a href='https://opensource.com/resources/python'>https://opensource.com/resources/python</a></br><a href='https://replit.com/languages/python3'>https://replit.com/languages/python3</a></br><a href='https://pythonbasics.org/'>https://pythonbasics.org/</a></br><a href='https://docs.python-guide.org/'>https://docs.python-guide.org/</a></br><a href='https://towardsdatascience.com/tagged/python'>https://towardsdatascience.com/tagged/python</a></br><a href='https://greenteapress.com/wp/think-python/'>https://greenteapress.com/wp/think-python/</a></br><a href='https://dev.to/t/python'>https://dev.to/t/python</a></br><a href='https://swcarpentry.github.io/python-novice-inflammation/'>https://swcarpentry.github.io/python-novice-inflammation/</a></br><a href='https://pythoninstitute.org/'>https://pythoninstitute.org/</a></br><a href='https://www.w3resource.com/python/python-tutorial.php'>https://www.w3resource.com/python/python-tutorial.php</a></br><a href='https://www.edureka.co/python-programming-certification-training'>https://www.edureka.co/python-programming-certification-training</a></br><a href='https://inventwithpython.com/'>https://inventwithpython.com/</a></br><a href='https://intellipaat.com/python-certification-training-online/'>https://intellipaat.com/python-certification-training-online/</a></br><a href='https://www.anaconda.com/products/distribution'>https://www.anaconda.com/products/distribution</a></br><a href='https://www.pythonanywhere.com/'>https://www.pythonanywhere.com/</a></br><a href='https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html'>https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html</a></br><a href='https://www.guru99.com/python-tutorials.html'>https://www.guru99.com/python-tutorials.html</a></br><a href='https://cloud.google.com/appengine/docs/python'>https://cloud.google.com/appengine/docs/python</a></br><a href='https://www.udacity.com/course/introduction-to-python--ud1110'>https://www.udacity.com/course/introduction-to-python--ud1110</a></br><a href='https://mindmajix.com/python-training'>https://mindmajix.com/python-training</a></br><a href='https://pythonprogramming.net/'>https://pythonprogramming.net/</a></br><a href='https://www.packtpub.com/in/tech/python'>https://www.packtpub.com/in/tech/python</a></br><a href='https://www.simplilearn.com/tutorials/python-tutorial'>https://www.simplilearn.com/tutorials/python-tutorial</a></br><a href='https://docs.microsoft.com/en-us/learn/modules/intro-to-python/'>https://docs.microsoft.com/en-us/learn/modules/intro-to-python/</a></br><a href='https://www.techtarget.com/whatis/definition/Python'>https://www.techtarget.com/whatis/definition/Python</a></br><a href='https://en.wikibooks.org/wiki/Python_Programming'>https://en.wikibooks.org/wiki/Python_Programming</a></br><a href='https://jobtensor.com/Tutorial/Python/en/Introduction'>https://jobtensor.com/Tutorial/Python/en/Introduction</a></br><a href='https://developer.mozilla.org/en-US/docs/Glossary/Python'>https://developer.mozilla.org/en-US/docs/Glossary/Python</a></br><a href='https://www.naukri.com/python-jobs'>https://www.naukri.com/python-jobs</a></br><a href='https://scikit-learn.org/'>https://scikit-learn.org/</a></br><a href='https://en.wikiversity.org/wiki/Python'>https://en.wikiversity.org/wiki/Python</a></br><a href='https://www.mygreatlearning.com/academy/learn-for-free/courses/python-fundamentals-for-beginners'>https://www.mygreatlearning.com/academy/learn-for-free/courses/python-fundamentals-for-beginners</a></br><a href='https://python.swaroopch.com/'>https://python.swaroopch.com/</a></br><a href='https://codingbat.com/python'>https://codingbat.com/python</a></br><a href='https://developers.arcgis.com/python/'>https://developers.arcgis.com/python/</a></br><a href='https://roadmap.sh/python'>https://roadmap.sh/python</a></br><a href='https://xkcd.com/353/'>https://xkcd.com/353/</a></br><a href='https://learnxinyminutes.com/docs/python/'>https://learnxinyminutes.com/docs/python/</a></br><a href='https://www.digitalocean.com/community/tags/python'>https://www.digitalocean.com/community/tags/python</a></br><a href='https://py.processing.org/'>https://py.processing.org/</a></br><a href='https://micropython.org/'>https://micropython.org/</a></br><a href='https://www.pythontutorial.net/'>https://www.pythontutorial.net/</a></br><a href='https://python101.pythonlibrary.org/'>https://python101.pythonlibrary.org/</a></br><a href='https://edube.org/study/pe1'>https://edube.org/study/pe1</a></br><a href='https://mode.com/python-tutorial/'>https://mode.com/python-tutorial/</a></br><a href='https://pandas.pydata.org/'>https://pandas.pydata.org/</a></br><a href='https://www.fullstackpython.com/'>https://www.fullstackpython.com/</a></br><a href='https://www.stxnext.com/what-is-python-used-for/'>https://www.stxnext.com/what-is-python-used-for/</a></br><a href='https://www.oreilly.com/library/view/learning-python-5th/9781449355722/'>https://www.oreilly.com/library/view/learning-python-5th/9781449355722/</a></br><a href='https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript'>https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript</a></br><a href='https://www.jython.org/'>https://www.jython.org/</a></br><a href='https://www.activestate.com/products/python/'>https://www.activestate.com/products/python/</a></br><a href='https://pyladies.com/'>https://pyladies.com/</a></br><a href='https://www.freelancer.com/jobs/python/'>https://www.freelancer.com/jobs/python/</a></br><a href='https://www.tiobe.com/tiobe-index/'>https://www.tiobe.com/tiobe-index/</a></br><a href='https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html'>https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html</a></br><a href='https://www.instagram.com/python.hub/?hl=en'>https://www.instagram.com/python.hub/?hl=en</a></br><a href='https://developer.nvidia.com/how-to-cuda-python'>https://developer.nvidia.com/how-to-cuda-python</a></br><a href='https://www.dataquest.io/path/data-analyst/'>https://www.dataquest.io/path/data-analyst/</a></br><a href='https://www.xda-developers.com/how-to-install-python/'>https://www.xda-developers.com/how-to-install-python/</a></br><a href='https://dev.mysql.com/doc/connector-python/en/'>https://dev.mysql.com/doc/connector-python/en/</a></br><a href='https://www.activestate.com/products/python/'>https://www.activestate.com/products/python/</a></br><a href='https://pyladies.com/'>https://pyladies.com/</a></br><a href='https://www.freelancer.com/jobs/python/'>https://www.freelancer.com/jobs/python/</a></br><a href='https://www.wikihow.com/Start-Programming-in-Python'>https://www.wikihow.com/Start-Programming-in-Python</a></br><a href='https://www.tiobe.com/tiobe-index/'>https://www.tiobe.com/tiobe-index/</a></br><a href='https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html'>https://www.aosabook.org/en/500L/a-python-interpreter-written-in-python.html</a></br><a href='https://www.instagram.com/python.hub/?hl=en'>https://www.instagram.com/python.hub/?hl=en</a></br><a href='https://developer.nvidia.com/how-to-cuda-python'>https://developer.nvidia.com/how-to-cuda-python</a></br><a href='https://www.dataquest.io/path/data-analyst/'>https://www.dataquest.io/path/data-analyst/</a></br><a href='https://www.xda-developers.com/how-to-install-python/'>https://www.xda-developers.com/how-to-install-python/</a></br></p>
+            </li>
+        </ul>
+        </div>
+        <br class="clear" />
+    </div>
+    </div>
+    </body>
+    </html>

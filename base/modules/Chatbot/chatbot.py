@@ -7,10 +7,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def init(wish = True):
-    if wish:
-        speak(Wish(),"en")
-
 def Input(Lang):
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -75,5 +71,43 @@ def scrping(Text, paraLen):
                 for data in soup.find_all("p"):
                     output.append(data.get_text())
             return output[5:10][paraLen]
+        except:
+            return "ScripeError"
+def Cscrping(Text, paraLen,Tags):
+        
+        def url(query): # this function generateing a links
+            links : list = []
+            try:
+                from googlesearch import search
+            except ImportError:
+                print("No module named 'google' found")
+            # to search
+            try:           
+                for j in search(query, num_results=10):
+                    links.append(j)
+            except:
+                return "Problem occers in link generator(to search)"
+            print(links)
+            return links
+
+        # link for extract html data
+        def getdata(url):
+            try:
+                r = requests.get(url)
+                return r.text
+            except:
+                return "none"
+        link : list = url(Text) #total links
+
+        try:
+            output : list = []
+            data : str = "" 
+            for i in range(paraLen):
+                htmldata = getdata(link[i])
+                soup = BeautifulSoup(htmldata, 'html.parser')
+                data : str = ''
+                for data in soup.find_all(Tags):
+                    output.append(data.get_text())
+            return output
         except:
             return "ScripeError"

@@ -1,5 +1,6 @@
 import gtts
 from googletrans import Translator as tra
+
 try:
     import pywhatkit as kit
 except:
@@ -52,34 +53,28 @@ class kit:
             except ImportError:
                 print("No module named 'google' found")
             # to search
-            try:           
-                for j in search(query, tld="co.in", num=10, stop=20, pause=2):
+            for j in search(query, num_results=10):
                     links.append(j)
-            except:
-                return "Problem occers in link generator(to search)"
+           
             return links
 
         # link for extract html data
         def getdata(url):
-            try:
-                r = requests.get(url)
-                return r.text
-            except:
-                return "none"
+            r = requests.get(url)
+            return r.text
         link : list = url(Text) #total links
 
-        try:
-            output : list = []
-            data : str = "" 
-            for i in range(paraLen):
-                htmldata = getdata(link[i])
-                soup = BeautifulSoup(htmldata, 'html.parser')
-                data : str = ''
-                for data in soup.find_all("p"):
-                    output.append(data.get_text())
-            return output
-        except:
-            return "We are Can Not Founded....{-_-}"
+        
+        output : list = []
+        data : str = "" 
+        for i in range(paraLen):
+            htmldata = getdata(link[i])
+            soup = BeautifulSoup(htmldata, 'html.parser')
+            data : str = ''
+            for data in soup.find_all("p"):
+                output.append(data.get_text())
+        return output
+    
 
     def KeyWordToPara(self, Keywords, lenPerPages): #it's also use (SA writing,letters)
         paragraph = self.scrping(Keywords,lenPerPages)
@@ -104,5 +99,6 @@ class kit:
 
 
 a=kit()
+# print(a.scrping("c++",6))
 #print(a.KeyWordToAudio("iron man",2,"iron.mp3"))
-print(a.TextToHand("spider helndfbwo fwufbwf iwufbiuwefiuwu fuweef dv","/home/nagi/Desktop/group/website/ClassRoomTools/app/routes/Tools"))
+# print(a.KeyWordToimage("c++",4,"/home/nagipragalathan/Desktop/StudyKit/static/cources"))

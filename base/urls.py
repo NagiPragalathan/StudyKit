@@ -1,5 +1,5 @@
 from django.urls import path
-from .Routes import views,tools,home,Profile
+from .Routes import views,tools,home,Profile,chatbot
 
 urlpatterns = []
 
@@ -45,7 +45,10 @@ profile = [
     path('signin', Profile.signin, name='signin'),
     path('logout', Profile.logout, name='logout'),
 ]
+Chatbot = [
+    path('cource', chatbot.cource),
+]
 
 #Adding all paths to main path
 
-add_path([profile,Home,ChatRoom,Tools])
+add_path([profile,Home,ChatRoom,Tools,Chatbot])
