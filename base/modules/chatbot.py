@@ -76,4 +76,4 @@ def scrping(Text, paraLen):
                     output.append(data.get_text())
             return output[5:10][paraLen]
         except:
-            return ScripeError
+            return "ScripeError"
